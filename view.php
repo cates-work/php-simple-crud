@@ -15,14 +15,14 @@
 
     <form action="?action=update" method="POST">
         <input type="hidden" name="id" value="<?=$edit_todo['id']?>">
-        <input type="text" name="item" value="<?=$edit_todo['item']?>">
+        <input autofocus type="text" name="item" value="<?=$edit_todo['item']?>">
         <button type="submit">Update</button>
     </form>
 
     <?php } else { ?>
 
     <form action="?action=create" method="POST">
-        <input type="text" name="item">
+        <input autofocus type="text" name="item">
         <button type="submit">Add</button>
     </form>
 
